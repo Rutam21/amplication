@@ -28,7 +28,9 @@
     "docker": "docker-compose up -d",
     "docker:down": "docker-compose down --volumes",
     "generate-graphql-schema": "ts-node -r tsconfig-paths/register scripts/generate-graphql-schema",
-    "check-graphql-schema": "ts-node -r tsconfig-paths/register scripts/check-graphql-schema"
+    "check-graphql-schema": "ts-node -r tsconfig-paths/register scripts/check-graphql-schema",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@amplication/container-builder": "^0.10.1",
@@ -108,7 +110,8 @@
     "validate-color": "2.1.1",
     "winston": "3.3.3",
     "winston-cloud-logging": "1.0.2",
-    "zlib": "1.0.5"
+    "zlib": "1.0.5",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@nestjs/cli": "7.6.0",
@@ -146,5 +149,6 @@
     "moduleNameMapper": {
       "^src/(.*)": "<rootDir>/src/$1"
     }
-  }
+  },
+  "snyk": true
 }
