@@ -15,7 +15,7 @@ RUN pkg --targets node14-alpine-x64 --output scheduler .
 
 CMD []
 
-FROM alpine
+FROM alpine:3.15.3
 COPY --from=builder /app/scheduler ./
 RUN apk update && \
   apk add --no-cache libstdc++ libgcc ca-certificates && \
