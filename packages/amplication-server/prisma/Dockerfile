@@ -1,4 +1,4 @@
-FROM node:16.13.1
+FROM node:16.17.1
 RUN openssl version -v
 RUN uname -a
 
