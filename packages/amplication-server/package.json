@@ -79,7 +79,7 @@
     "octokit-plugin-create-pull-request": "3.9.3",
     "passport": "0.5.2",
     "passport-github2": "0.1.12",
-    "passport-jwt": "4.0.0",
+    "passport-jwt": "4.0.1",
     "php-serialize": "4.0.2",
     "pluralize": "8.0.0",
     "query-string": "7.1.1",
